@@ -28,7 +28,7 @@ const SignUp = () => {
   };
   return (
     <div className='flex flex-col flex-grow items-center justify-center gap-10'>
-      <h2 className='font-bold text-4xl text-blue-800'>Let's Get Started</h2>
+      <h2 className='font-bold text-3xl md:text-4xl text-blue-800'>Let's Get Started</h2>
       <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col w-full px-4 md:w-1/3 md:px-0 gap-2'>
       {customError && <FormErrorMessage className="mx-auto" message={customError}/>}
         <input 

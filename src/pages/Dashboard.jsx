@@ -24,8 +24,6 @@ const Dashboard = () => {
 
   return (
     <div className='flex-grow'>
-      {/* <h2 className='m-5 text-4xl font-bold'>Dashboard</h2> */}
-      {/* <ProfileCard/> */}
       <h2 className='m-5 text-3xl font-bold'>Summery</h2>
       <Stats stats={
         [

@@ -123,17 +123,6 @@ const TaskList = () => {
           
 
           <div className='ml-auto flex gap-2'>
-
-            {/* <select className='text-black rounded-md' name="sort" onChange={(e) => {
-              setSortAndFilterInfo({ ...sortAndFilterInfo, sortKey: Number(e.target.value) })
-              }} >
-                <option value={-1} autoFocus>Sort</option> // -1
-                <option value={0}>Start Time: ASC</option> // 0
-                <option value={1}>Start Time: DESC</option> // 1
-                <option value={2}>End Time: ASC</option> //
-                <option value={3}>End Time: DESC</option>
-              </select> */}
-
             <select className='text-black rounded-md' name="priority" value={
               activeFilters.priority.options.length === 5 ? -1 :
               activeFilters.priority.options[0]

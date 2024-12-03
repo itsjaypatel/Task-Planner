@@ -109,7 +109,7 @@ export async function dashboardStats(filters){
             }else{
                 let timeToFinish = Math.max(0,(
                     DateUtil.getTimeInMillis(t.endDate,t.endTime) - DateUtil.currentIndianTimeInMillis()));
-                let timeLapsed = DateUtil.currentIndianTimeInMillis() - DateUtil.getTimeInMillis(t.startDate,t.startTime);    
+                let timeLapsed = Math.max(0,DateUtil.currentIndianTimeInMillis() - DateUtil.getTimeInMillis(t.startDate,t.startTime));    
                     
                     
                 stat.pending.count += 1;
